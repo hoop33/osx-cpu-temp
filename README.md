@@ -1,10 +1,11 @@
 # OSX CPU Temp
 
-Outputs current CPU temperature in °C for OSX
+Outputs current CPU temperature for OSX.
 
 ## Usage 
 
 ### Compiling
+
 ```bash
 make
 ```
@@ -22,15 +23,27 @@ sudo make install # installs to /usr/local/bin
 osx-cpu-temp
 ```
 
+### Using clib
+
+```bash
+clib install lavoiesl/osx-cpu-temp
+```
+
 ### Output example
 
 ```
-61.8°C
+61.8 °C
 ```
+
+### Options
+
+ * `-C` Output temperature in Celsius (default).
+ * `-F` Output temperature in Fahrenheit.
+ * `-f` Output fan speed.
 
 ## Maintainer 
 
-Sébastien Lavoie <sebastien@lavoie.sl>
+Sébastien Lavoie <github@lavoie.sl>
 
 ### Source 
 
@@ -39,5 +52,5 @@ Copyright (C) 2006
 
 ### Inspiration 
 
- * http://www.eidac.de/smcfancontrol/
+ * https://www.eidac.de/smcfancontrol/
  * https://github.com/hholtmann/smcFanControl/tree/master/smc-command
